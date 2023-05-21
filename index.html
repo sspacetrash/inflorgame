@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Inflorescences</title>
-    <meta name="description" content="">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=PT+Serif:ital@0;1&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet"> 
+    <meta name="description" content="Become the owner of you're own magical fragrance store! Create mind-altering scents that change people's lives forever, for better or worse...">
     <link href="assets/css/styles.css" rel="stylesheet">
     <link href="assets/img/favicon.png" type="image/png" rel="icon">
+    <meta name="og:title" content="Inflorescences">
+    <meta name="og:type" content="website">
+    <meta name="og:image" content="assets/img/share-image.jpg">
+    <meta name="og:url" content="https://www.inflorgame.com/">
+    <meta name="og:description" content="Become the owner of you're own magical fragrance store! Create mind-altering scents that change people's lives forever, for better or worse...">
   </head>
   <body>
     <nav>
@@ -52,7 +55,7 @@
             </svg>
           </a>
         </div>
-        <a class="press" href="https://drive.google.com/drive/folders/1hVoj2_vQucNHYCC1BA5QBk0FNtDPzoVR?usp=share_link">Press Kit</a>
+        <a id="press" href="https://drive.google.com/drive/folders/1hVoj2_vQucNHYCC1BA5QBk0FNtDPzoVR?usp=share_link">Press Kit</a>
         <!-- <div class="icons lang closed">
           <button disabled>
             <svg viewBox="0 0 24 24">
@@ -104,43 +107,35 @@
     <section id="characters">
       <div class="wrapper">
         <h2>Your Loyal Customers</h2>
-        <p>Open the doors of your fragrance shop and welcome in "the regulars", your loyal customers. Each has their own story to tell and problems to share, they just need you to&nbsp;listen.</p>
+        <p>Open the doors of your fragrance shop and welcome in <span class="italic">"the regulars"</span>, your loyal customers. Each has their own story to tell and problems to share, they just need you to&nbsp;listen.</p>
       </div>
-      <div class="wrapper wide">
-        <div id="cards">
-          <div class="card">
-            <div>
-              <img src="./assets/img/character-mika.png">
-              <div>
-                <h3>Mika</h3>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div>
-              <img src="./assets/img/character-allan.png">
-              <div>
-                <h3>Allan</h3>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div>
-              <img src="./assets/img/character-flora.png">
-              <div>
-                <h3>Flora</h3>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div>
-              <img src="./assets/img/character-marc.png">
-              <div>
-                <h3>Mark</h3>
-              </div>
-            </div>
+      <div class="wrapper wide cards">
+        <div class="card" id="mika">
+          <div>
+            <img src="./assets/img/character-mika.png">
+            <p>Mika</p>
           </div>
         </div>
+        <div class="card" id="allan">
+          <div>
+            <img src="./assets/img/character-allan.png">
+            <p>Allan</p>
+          </div>
+        </div>
+        <div class="card" id="flora">
+          <div>
+            <img src="./assets/img/character-flora.png">
+            <p>Flora</p>
+          </div>
+        </div>
+        <div class="card" id="marc">
+          <div>
+            <img src="./assets/img/character-marc.png">
+            <p>Marc</p>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
         <p>
           Will you help them to</br>
           <span class="spaced">succeed?</span></br>
@@ -156,6 +151,9 @@
         <p>Unlike other fragrance shops, yours is special. You use the <span class="italic">language of flowers</span> to guide your creations, allowing you to conjour magical, mind-altering scents, bespoke to each customer's&nbsp;needs...</span></p>
       </div>
       <div class="wrapper wide halves">
+        <div>
+          <img src="./assets/img/screenshot-1.jpg">
+        </div>
         <p>
           Each day you meet<br/>
           <span class="italic spaced">"the regulars"</span></br>
@@ -163,8 +161,8 @@
           their cheerful greetings</br>
           and friendly smiles.</br>
         </p>
-        <div class="img">
-          <img src="./assets/img/screenshot-1.jpg">
+        <div>
+          <img src="./assets/img/screenshot-2.jpg">
         </div>
         <p>
           But listen carefully,</br>
@@ -173,8 +171,8 @@
           to find their <span class="italic">deepest,</span></br>
           <span class="bold">darkest</span> desires.
         </p>
-        <div class="img">
-          <img src="./assets/img/screenshot-2.jpg">
+        <div>
+          <img src="./assets/img/screenshot-3.jpg">
         </div>
         <p>
           Use the clues you've gathered</br>
@@ -183,16 +181,13 @@
           that will change their lives</br>
           <span class="spaced">forever.</span>
         </p>
-        <div class="img">
-          <img src="./assets/img/screenshot-3.jpg">
-        </div>
       </div>
     </section>
 
     <section id="night">
       <div class="wrapper">
         <h2>Your Decision</h2>
-        <p>Will you use these <span class="italic">mysterious</span> flowers to inspire love and kindness, or will you let their <span class="glow">magic</span> corrupt you? You decide how your story&nbsp;ends.</p>
+        <p>Will you use these <span class="italic">mysterious</span> flowers to inspire love and kindness, or will you let the <span class="glow">magic</span> corrupt you? You decide how your story&nbsp;ends.</p>
       </div>
     </section>
 
@@ -255,9 +250,9 @@
           <img src="./assets/img/team-logo.jpg">
           <p>FloriProductions</p>
         </div>
-        <p class="text"><a href="https://drive.google.com/drive/folders/1hVoj2_vQucNHYCC1BA5QBk0FNtDPzoVR?usp=share_link">Press Kit</a><span> | </span>Site by <a href="https://oli.digital" target="_blank">Oli</a></p>
+        <p class="links"><a href="https://drive.google.com/drive/folders/1hVoj2_vQucNHYCC1BA5QBk0FNtDPzoVR?usp=share_link">Press Kit</a><span> | </span>Site by <a href="https://oli.digital" target="_blank">Oli</a></p>
       </div>
     </footer>
-    <script src="assets/js/scripts.js"></script>
+    <!-- <script src="assets/js/scripts.js"></script> -->
   </body>
 </html>
