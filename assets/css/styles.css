@@ -69,7 +69,7 @@ nav #press:hover{color:#f4a9a1}
 header{align-items:center;background:center/cover url('../img/background-day.jpg');display:flex;min-height:100%;overflow:hidden;padding:200px 0;position:relative}
 header::before,
 header::after{bottom:0;content:'';left:0;pointer-events:none;position:absolute;right:0;top:0}
-header::before{background:linear-gradient(transparent 70%,#fff calc(100% - 100px));filter:blur(20px);margin:-70px;z-index:2}
+header::before{background:linear-gradient(transparent 70%,#fff 100%);z-index:2}
 header::after{-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);background:rgba(0,0,0,.25)}
 header .wrapper{padding:0 .5em;z-index:1}
 header h1{margin-bottom:20px;position:relative}
