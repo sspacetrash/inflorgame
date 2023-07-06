@@ -54,7 +54,7 @@
     </nav>
 
     <header>
-      <div class="wrapper wide">
+      <div class="wrapper wide" data-parallax=".6">
         <h1>
           <img src="assets/img/logo-1.png" alt="Inflorescences">
           <img src="assets/img/logo-2.png" alt="">
@@ -72,7 +72,7 @@
         </a>
         <p>...and coming soon to Itch.io</p>
       </div>
-      <div class="characters">
+      <div class="characters" data-parallax="2">
         <img src="./assets/img/character-allan.png" alt="">
         <img src="./assets/img/character-flora.png" alt="">
       </div>
@@ -80,11 +80,19 @@
         <span>Scroll down</span>
         <img src="assets/img/arrow.png" alt="">
       </div>
+      <img src="assets/img/background-day.jpg" alt="" class="background" data-parallax=".5">
     </header>
 
     <section id="summary">
       <div class="wrapper narrow">
         <p class="italic">With <span class="glow">magical</span> flowers at your fingertips, you have the power to create fragrances that change people's lives, for better or&nbsp;worse....</p>
+        <!-- <button class="button">
+          Watch Trailer
+          <svg viewBox="-7 0 32 32" aria-hidden="true">
+            <title>Play</title>
+            <path d="M0 6.688v18.906c0 0.344 0.156 0.625 0.469 0.813 0.125 0.094 0.344 0.125 0.5 0.125s0.281-0.031 0.438-0.125l16.375-9.438c0.313-0.219 0.5-0.5 0.5-0.844 0-0.313-0.188-0.594-0.5-0.813l-16.375-9.438c-0.563-0.406-1.406 0.094-1.406 0.813z"/>
+          </svg>
+        </button> -->
       </div>
     </section>
 
@@ -93,31 +101,23 @@
         <h2>Your Loyal Customers</h2>
         <p>Open the doors of your fragrance shop and welcome in <span class="italic">"the regulars"</span>, your loyal customers. Each has their own story to tell and problems to share, they just need you to&nbsp;listen.</p>
       </div>
-      <div class="wrapper wide cards">
-        <div class="card" id="mika">
-          <div>
-            <img src="./assets/img/character-mika.png" alt="">
-            <p>Mika</p>
-          </div>
-        </div>
-        <div class="card" id="allan">
-          <div>
-            <img src="./assets/img/character-allan.png" alt="">
-            <p>Allan</p>
-          </div>
-        </div>
-        <div class="card" id="flora">
-          <div>
-            <img src="./assets/img/character-flora.png" alt="">
-            <p>Flora</p>
-          </div>
-        </div>
-        <div class="card" id="marc">
-          <div>
-            <img src="./assets/img/character-marc.png" alt="">
-            <p>Marc</p>
-          </div>
-        </div>
+      <div class="wrapper wide cards" data-parallax=".25">
+        <button class="card mika">
+          <img src="./assets/img/character-mika.png" alt="">
+          <span>Mika</span>
+        </button>
+        <button class="card allan">
+          <img src="./assets/img/character-allan.png" alt="">
+          <span>Allan</span>
+        </button>
+        <button class="card flora">
+          <img src="./assets/img/character-flora.png" alt="">
+          <span>Flora</span>
+        </button>
+        <button class="card marc">
+          <img src="./assets/img/character-marc.png" alt="">
+          <span>Marc</span>
+        </button>
       </div>
       <div class="wrapper">
         <p>
@@ -127,6 +127,16 @@
           <span class="spaced bold">everything?</span>
         </p>
       </div>
+      <dialog>
+        <div class="wrapper narrow">
+          <div class="img">
+            <img src="./assets/img/character-mika.png" alt="">
+          </div>
+          <h3>Mika</h3>
+          <p>Mika is known for her cheerful personality and Japanese gothic style. She frequents the shop almost every day, often discussing her jewelry-making job and her fictional significant other.</p>
+          <p>However, Mika harbors a deep pain stemming from a traumatic event with her younger brother...</p>
+        </div>
+      </dialog>
     </section>
 
     <section id="about">
@@ -230,10 +240,9 @@
           <span>FloriProductions</span>
         </div>
         <div class="links">
-          <span><a href="https://drive.google.com/drive/folders/1hVoj2_vQucNHYCC1BA5QBk0FNtDPzoVR?usp=share_link" target="_blank">Press Kit</a>
+          <span><a href="https://drive.google.com/drive/folders/1hVoj2_vQucNHYCC1BA5QBk0FNtDPzoVR?usp=share_link" target="_blank">Press Kit</a></span>
         </div>
       </div>
     </footer>
-    <script src="assets/js/scripts.js"></script>
   </body>
 </html>
